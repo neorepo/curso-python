@@ -5,7 +5,6 @@ while($count--> 0){
 }
 
 netacad
-emperador1833@gmail.com
 OxzbUS5LlS
 
 En esta sección me quede para estudiar!
