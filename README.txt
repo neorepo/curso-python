@@ -8,8 +8,8 @@ netacad
 OxzbUS5LlS
 
 En esta sección me quede para estudiar!
-https://edube.org/learn/programming-essentials-in-python-part-1-spanish/listas-colecciones-de-datos
-
+https://edube.org/learn/programming-essentials-in-python-part-1-spanish/listas-en-aplicaciones-avanzadas
+https://www.xvideos.com/video54471197/fake_taxi_blonde_amber_deen_anal_insertion_rough_sex_ride
 En esta sección me quede para seguir completando el word
 https://edube.org/learn/programming-essentials-in-python-part-1-spanish/m-oacute-dulo-completado-1
 
