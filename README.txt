@@ -17,8 +17,6 @@ https://edube.org/learn/programming-essentials-in-python-part-1-spanish/laborato
 
 https://edube.org/learn/programming-essentials-in-python-part-1-spanish/tuplas-y-diccionarios
 
-https://www.xvideos.com/video54471197/fake_taxi_blonde_amber_deen_anal_insertion_rough_sex_ride
-
 Puedes estar familiarizado con las leyes de De Morgan. Dicen que:
 
 La negación de una conjunción es la separación de las negaciones.
@@ -109,5 +107,4 @@ print(imc(352.5, 1.65))
 
 SELECT nombre, count(nombre) AS total FROM localidad GROUP BY nombre ORDER BY total DESC LIMIT 1000
 
-
-
+La raíz cuadrada de x es la misma que x 0.5
