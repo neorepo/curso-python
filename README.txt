@@ -35,13 +35,13 @@ not (p or q) == (not p) and (not q)
 neodrive.edu@gmail.com
 
 neocode.edu@gmail.com
-Crimson33
+Crim
 
 cloud.storage.edu@gmail.com
-Abc123456/*
+Abc123/*
 
 neorepo.edu@gmail.com
-Abc 123/*-
+Abc 123
 
 def isYearLeap(year):
     isLeapYear = (year % 4 == 0)
@@ -77,8 +77,6 @@ def dayOfYear(year, month, day):
 # Año, mes, día
 print( dayOfYear(2000, 12, 31) ) # 366
 
-circulo barcos zicula
-
 def isPrime(num):
     if num < 2:
         return False
@@ -107,4 +105,4 @@ print(imc(352.5, 1.65))
 
 SELECT nombre, count(nombre) AS total FROM localidad GROUP BY nombre ORDER BY total DESC LIMIT 1000
 
-La raíz cuadrada de x es la misma que x 0.5
+La raíz cuadrada de x es la misma que x^0.5

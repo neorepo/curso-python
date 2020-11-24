@@ -6,9 +6,7 @@ def irAlCine():
 
 def almorzar():
     print ('Almorzandooo!')
-    
-# emperador1833@gmail.com
-# Crimson3381
+
 hora = int(input("Hora de inicio (horas): "))
 min = int(input("Minuto de inicio (minutos): "))
 dura = int(input("Duración del evento (minutos): "))
@@ -33,7 +31,7 @@ hora = ( ( (hora * 60) + min + dura ) // 60 ) % 24
 min = ( min + dura ) % 60
 
 print(hora, min, sep=":")
-nombre = "Julio"
+nombre = "John"
 print(0.0000000000000000000001)
 
 climaEsBueno = True
