@@ -1,21 +1,39 @@
-$count = 10;
+/*Code php*/
+$count = 11;
 // ¿Qué tal esta legibilidad?
-while($count--> 0){
+while ($count--> 1) {
     print $count . '<br>';
 }
 
-netacad
+/*Code php*/
+$count = 0;
+// ¿Qué tal esta legibilidad?
+while ($count++< 10) {
+    print $count . '<br>';
+}
+
+INFORMÁTICA CONCEPTOS BÁSICOS
+https://www.youtube.com/watch?v=fP_Wow2hn0Y
+https://www.youtube.com/watch?v=FToDEHhpYHI
+
+Netacad
+emperador1833@gmail.com
 OxzbUS5LlS
 
-Fundamentos de Programación en Python: Módulo 4
+Curso => Fundamentos de programación en python
+
+Módulo 1 Introducción a Python y a la programación
+https://edube.org/learn/programming-essentials-in-python-part-1-spanish/fundamentos-de-python-parte-1
+
+Módulo 2 Tipos de datos, variables, operaciones básicas de entrada y salida, operadores básicos
+https://edube.org/learn/programming-essentials-in-python-part-1-spanish/fundamentos-de-python-m-oacute-dulo-2
+
+Módulo 3 Valores booleanos, ejecución condicional, bucles, listas y procesamiento de listas, operaciones lógicas y bit a bit
+https://edube.org/learn/programming-essentials-in-python-part-1-spanish/fundamentos-de-python-m-oacute-dulo-3
+https://edube.org/learn/programming-essentials-in-python-part-1-spanish/operaciones-l-oacute-gicas-y-de-bits-en-python-and-or-not
+
+Módulo 4 Funciones, tuplas, diccionarios y procesamiento de datos
 https://edube.org/learn/programming-essentials-in-python-part-1-spanish/fundamentos-de-python-m-oacute-dulo-4
-
-https://edube.org/learn/programming-essentials-in-python-part-1-spanish/creando-funciones-con-dos-par-aacute-metros-1
-
-En esta sección me quede para estudiar!
-https://edube.org/learn/programming-essentials-in-python-part-1-spanish/laboratorio-n-uacute-meros-primos-iquest-c-oacute-mo-encontrarlos
-
-https://edube.org/learn/programming-essentials-in-python-part-1-spanish/tuplas-y-diccionarios
 
 Puedes estar familiarizado con las leyes de De Morgan. Dicen que:
 
@@ -106,3 +124,7 @@ print(imc(352.5, 1.65))
 SELECT nombre, count(nombre) AS total FROM localidad GROUP BY nombre ORDER BY total DESC LIMIT 1000
 
 La raíz cuadrada de x es la misma que x^0.5
+√x = x^.5
+
+Java tutorial for beginners ☕
+https://www.youtube.com/watch?v=xk4_1vDrzzo
