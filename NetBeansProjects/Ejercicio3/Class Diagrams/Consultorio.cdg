@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Consultorio">
+  <ClassDiagramComponents>
+    <Class name="Persona" package="" visibility="protected" isAbstract="true" xPosition="474.0" yPosition="11.0">
+      <Fields>
+        <Field name="nombre" type="String" visibility="protected"/>
+        <Field name="apellido" type="String" visibility="protected"/>
+        <Field name="numDocumento" type="String" visibility="protected"/>
+        <Field name="edad" type="int" visibility="protected"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Profesional" package="" visibility="public" xPosition="402.0" yPosition="231.0">
+      <Fields>
+        <Field name="numMatricula" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="nombre"/>
+          <Argument type="String" name="apellido"/>
+          <Argument type="String" name="numMatricula"/>
+        </Constructor>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="Paciente" package="" visibility="public" xPosition="825.0" yPosition="240.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="nombre"/>
+          <Argument type="String" name="apellido"/>
+          <Argument type="String" name="numDocumento"/>
+          <Argument type="int" name="edad"/>
+        </Constructor>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="Turno" package="" visibility="public" xPosition="569.0" yPosition="421.0">
+      <Fields>
+        <Field name="paciente" type="Paciente" visibility="private"/>
+        <Field name="profesional" type="Profesional" visibility="private"/>
+        <Field name="fechaTurno" type="Calendar" visibility="private"/>
+        <Field name="motivoConsulta" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Paciente" name="paciente"/>
+          <Argument type="Profesional" name="profesional"/>
+          <Argument type="Calendar" name="fechaTurno"/>
+          <Argument type="String" name="motivoConsulta"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="setTurno" returnType="int" visibility="public">
+          <Argument type="int" name="anio"/>
+          <Argument type="int" name="mes"/>
+          <Argument type="int" name="dia"/>
+          <Argument type="int" name="hora"/>
+          <Argument type="int" name="minuto"/>
+          <Argument type="int" name="segundo"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Secretaria" package="" visibility="public" xPosition="57.0" yPosition="67.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="nombre"/>
+          <Argument type="String" name="apellido"/>
+        </Constructor>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="Agenda" package="" visibility="public" xPosition="113.0" yPosition="478.0">
+      <Fields>
+        <Field name="disponibilidad" type="Calendar" visibility="private"/>
+        <Field name="duracionConsulta" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Calendar" name="disponibilidad"/>
+          <Argument type="int" name="duracionConsulta"/>
+        </Constructor>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="Tratamiento" package="" visibility="public" xPosition="802.0" yPosition="48.0">
+      <Fields>
+        <Field name="paciente" type="Paciente" visibility="private"/>
+        <Field name="tipoTratamiento" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="ListaTurno" package="" visibility="public" xPosition="1258.0" yPosition="412.0">
+      <Fields>
+        <Field name="listadoTurnos" type="ArrayList&lt;Turno&gt;" visibility="private" isStatic="true"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getTurno" returnType="ArrayList" visibility="public" isStatic="true"/>
+        <Method name="setTurno" returnType="void" visibility="public" isStatic="true">
+          <Argument type="Turno" name="nuevoTurno"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="ListaPaciente" package="" visibility="public" xPosition="1007.0" yPosition="29.0">
+      <Fields>
+        <Field name="listadoPacientes" type="ArrayList&lt;Paciente&gt;" visibility="private" isStatic="true"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getPaciente" returnType="ArrayList" visibility="public" isStatic="true"/>
+        <Method name="setPaciente" returnType="void" visibility="public" isStatic="true">
+          <Argument type="Paciente" name="nuevoPaciente"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="ListaProfesional" package="" visibility="public" xPosition="9.0" yPosition="272.0">
+      <Fields>
+        <Field name="listadoProfesionales" type="ArrayList&lt;Profesional&gt;" visibility="private" isStatic="true"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getProfesional" returnType="ArrayList" visibility="public" isStatic="true"/>
+        <Method name="setProfesional" returnType="void" visibility="public" isStatic="true">
+          <Argument type="Profesional" name="nuevoProfesional"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <HasRelation name="Registra turno de" source="Turno" target="Paciente" type="Default" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <HasRelation name="Prescribe Tratamiento" source="Profesional" target="Tratamiento" type="Default" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="Secretaria" target="Persona"/>
+    <HasRelation name="Formada por " source="ListaProfesional" target="Profesional" type="Default" sourceCardinality="0..1" targetCardinality="1..*" collectionType="ArrayList"/>
+    <HasRelation name="Realiza Tratamiento" source="Paciente" target="Tratamiento" type="Default" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <HasRelation name="Registra Disponibilidad" source="Profesional" target="Agenda" type="Default" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <HasRelation name="Formado por" source="ListaPaciente" target="Paciente" type="Default" sourceCardinality="0..1" targetCardinality="1..*" collectionType="ArrayList"/>
+    <IsRelation name="is" source="Profesional" target="Persona"/>
+    <HasRelation name="Registra Turno Para" source="Turno" target="Profesional" type="Default" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <HasRelation name="Formada por Turnos" source="ListaTurno" target="Turno" type="Default" sourceCardinality="0..1" targetCardinality="1..*" collectionType="ArrayList"/>
+    <IsRelation name="is" source="Paciente" target="Persona"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
