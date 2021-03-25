@@ -16,10 +16,6 @@ INFORMÁTICA CONCEPTOS BÁSICOS
 https://www.youtube.com/watch?v=fP_Wow2hn0Y
 https://www.youtube.com/watch?v=FToDEHhpYHI
 
-Netacad
-emperador1833@gmail.com
-OxzbUS5LlS
-
 Curso => Fundamentos de programación en python
 
 Módulo 1 Introducción a Python y a la programación
@@ -49,17 +45,6 @@ Escribamos lo mismo usando Python:
 
 not (p and q) == (not p) or (not q) 
 not (p or q) == (not p) and (not q)
-
-neodrive.edu@gmail.com
-
-neocode.edu@gmail.com
-Crim
-
-cloud.storage.edu@gmail.com
-Abc123/*
-
-neorepo.edu@gmail.com
-Abc 123
 
 def isYearLeap(year):
     isLeapYear = (year % 4 == 0)
