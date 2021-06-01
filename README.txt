@@ -110,6 +110,3 @@ SELECT nombre, count(nombre) AS total FROM localidad GROUP BY nombre ORDER BY to
 
 La raíz cuadrada de x es la misma que x^0.5
 √x = x^.5
-
-Java tutorial for beginners ☕
-https://www.youtube.com/watch?v=xk4_1vDrzzo
