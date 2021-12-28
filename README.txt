@@ -1,11 +1,11 @@
-/*Code php*/
+﻿/*PHP*/
 $count = 11;
 // ¿Qué tal esta legibilidad?
 while ($count--> 1) {
     print $count . '<br>';
 }
 
-/*Code php*/
+/*PHP*/
 $count = 0;
 // ¿Qué tal esta legibilidad?
 while ($count++< 10) {
@@ -15,21 +15,6 @@ while ($count++< 10) {
 INFORMÁTICA CONCEPTOS BÁSICOS
 https://www.youtube.com/watch?v=fP_Wow2hn0Y
 https://www.youtube.com/watch?v=FToDEHhpYHI
-
-Curso => Fundamentos de programación en python
-
-Módulo 1 Introducción a Python y a la programación
-https://edube.org/learn/programming-essentials-in-python-part-1-spanish/fundamentos-de-python-parte-1
-
-Módulo 2 Tipos de datos, variables, operaciones básicas de entrada y salida, operadores básicos
-https://edube.org/learn/programming-essentials-in-python-part-1-spanish/fundamentos-de-python-m-oacute-dulo-2
-
-Módulo 3 Valores booleanos, ejecución condicional, bucles, listas y procesamiento de listas, operaciones lógicas y bit a bit
-https://edube.org/learn/programming-essentials-in-python-part-1-spanish/fundamentos-de-python-m-oacute-dulo-3
-https://edube.org/learn/programming-essentials-in-python-part-1-spanish/operaciones-l-oacute-gicas-y-de-bits-en-python-and-or-not
-
-Módulo 4 Funciones, tuplas, diccionarios y procesamiento de datos
-https://edube.org/learn/programming-essentials-in-python-part-1-spanish/fundamentos-de-python-m-oacute-dulo-4
 
 Puedes estar familiarizado con las leyes de De Morgan. Dicen que:
 
