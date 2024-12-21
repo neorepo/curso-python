@@ -95,3 +95,17 @@ SELECT nombre, count(nombre) AS total FROM localidad GROUP BY nombre ORDER BY to
 
 La raíz cuadrada de x es la misma que x^0.5
 √x = x^.5
+
+def shuffle(perm):
+
+    from random import random
+    
+    n = len(perm)
+
+    for i in range(n):
+
+        r = i + (int) (random() * (n - i))
+
+        if r != i: perm[r], perm[i] = perm[i], perm[r]
+
+    return perm
