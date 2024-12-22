@@ -109,3 +109,32 @@ def shuffle(perm):
         if r != i: perm[r], perm[i] = perm[i], perm[r]
 
     return perm
+
+a = ['a', 'e', 'i', 'o', 'u']
+
+i = len(a) # 5
+
+while (i := i - 1) >= 0:
+
+    print( a[i] )
+
+
+from random import random
+###   0    1    2    3    4
+a = ['a', 'e', 'i', 'o', 'u']
+
+print(a)
+
+i = 0
+
+n = len(a) # 5
+
+while i < n:
+
+    r = i + (int) (random() * (n - i))
+
+    if r != i: a[r], a[i] = a[i], a[r]
+
+    i += 1
+
+print(a)
